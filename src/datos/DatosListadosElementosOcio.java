@@ -11,7 +11,6 @@ public class DatosListadosElementosOcio {
 	public static double precioComprarUnLibro = 10;
 	public static double precioComprarUnaPelicula = 10;
 	public static double precioComprarUnVideojuego = 10;
-	public static double precioEstancia = 7.50;
-
+	public static double precioEnvio = 7.50;
 	public static double descuentoParaSocios = 20;
 }

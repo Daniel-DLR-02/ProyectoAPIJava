@@ -7,11 +7,11 @@ import model.*;
 @FunctionalInterface
 public interface IPrecioServicio {
 
-	public default double cobrarEstancia(Persona p1) {
+	public default double cobrarEnvio(Persona p1) {
 		if (p1.isSocio())
-			return aplicarDescuento(DatosListadosElementosOcio.precioEstancia);
+			return aplicarDescuento(DatosListadosElementosOcio.precioEnvio);
 		else
-			return DatosListadosElementosOcio.precioEstancia;
+			return DatosListadosElementosOcio.precioEnvio;
 	}
 
 	public default double aplicarDescuento(double precioInicial) {
