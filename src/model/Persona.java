@@ -5,11 +5,12 @@ import java.util.List;
 
 public class Persona {
 
-	String nombre,apellidos,id,numeroTelefono,email;
+	String nombre, apellidos, id, numeroTelefono, email;
 	boolean socio;
-	List<ElementoDeOcio> carrito=new ArrayList<ElementoDeOcio>();
-	
-	public Persona(String nombre, String apellidos, String id, String numeroTelefono, String email, boolean socio,List<ElementoDeOcio> carrito) {
+	List<ElementoDeOcio> carrito = new ArrayList<ElementoDeOcio>();
+
+	public Persona(String nombre, String apellidos, String id, String numeroTelefono, String email, boolean socio,
+			List<ElementoDeOcio> carrito) {
 		super();
 		this.nombre = nombre;
 		this.apellidos = apellidos;
@@ -17,7 +18,7 @@ public class Persona {
 		this.numeroTelefono = numeroTelefono;
 		this.email = email;
 		this.socio = socio;
-		this.carrito=carrito;
+		this.carrito = carrito;
 	}
 
 	public List<ElementoDeOcio> getCarrito() {
@@ -75,7 +76,5 @@ public class Persona {
 	public void setSocio(boolean socio) {
 		this.socio = socio;
 	}
-	
-	
-	
+
 }

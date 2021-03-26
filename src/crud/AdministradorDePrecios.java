@@ -8,7 +8,7 @@ import model.*;
 public class AdministradorDePrecios {
 
 	public static void CalcularPrecioCarrito(Persona p1) {
-		
+
 		IPrecioServicio calcularCarrito = (List<ElementoDeOcio> le1) -> {
 			double totalCompra = 0;
 			for (ElementoDeOcio e1 : le1) {
@@ -21,7 +21,7 @@ public class AdministradorDePrecios {
 			}
 			return totalCompra;
 		};
-		
+
 		calcularCarrito.calcularPrecioDeServicios(p1.getCarrito());
 	}
 }
