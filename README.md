@@ -159,10 +159,10 @@ public interface ISaludarUser{
 
     public void saludarUsuarioPorNombre(String nombre);
 
-    public default void saludarUsuario(){
-    	
-      System.out.println("Bienvenido,usuario");
-      
+    public default void saludarUsuarioPorDefecto(){
+
+    	System.out.println("Bienvenido,usuario");
+		
     }
 }
 ```
@@ -179,10 +179,10 @@ public class Principal{
 
         ISaludarUser saludarUsuario = (username) -> System.out.println("Bienvenido," + username);
 
-        saludarUsuario.saludarUsuario();
+        saludarUsuario.saludarUsuarioPorDefecto();
 				
         saludarUsuario.saludarUsuarioPorNombre("GenericUserName1903");	
-    }
+	}
 }
 ```
 Aquí para hacer uso del lambda lo que he hecho es añadir la siguiente sintaxis:
