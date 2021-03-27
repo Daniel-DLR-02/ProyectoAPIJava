@@ -15,7 +15,7 @@ public interface IPrecioServicio {
 	}
 
 	public default double aplicarDescuento(double precioInicial) {
-		return precioInicial * (DatosListadosElementosOcio.descuentoParaSocios / 100);
+		return precioInicial * ((100-DatosListadosElementosOcio.descuentoParaSocios) / 100);
 	}
 
 	public double calcularPrecioDeServicios(List<ElementoDeOcio> ListaServicios);

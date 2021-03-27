@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 import model.ElementoDeOcio;
 
-public class CompararCodigos implements Comparator<ElementoDeOcio> {
+public class ComparatorCodigos implements Comparator<ElementoDeOcio> {
 
 	@Override
 	public int compare(ElementoDeOcio e1, ElementoDeOcio e2) {
@@ -20,4 +20,5 @@ public class CompararCodigos implements Comparator<ElementoDeOcio> {
 			return 0;
 	}
 
+	//Quizá otra forma de hacer esto sería con comparable,pero así podemos ver el uso de esta interfaz funcional(Comparator).
 }

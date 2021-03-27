@@ -3,7 +3,7 @@ package model;
 public class Pelicula extends ElementoDeOcio {
 
 	/*
-	 * Esta clase heredará de ElementoDeOcio.En esta clase defino lo que será el
+	 * Esta clase heredarï¿½ de ElementoDeOcio.En esta clase defino lo que serï¿½ el
 	 * objeto Pelicula. Con sus correspondientes getters and setters.
 	 */
 
@@ -49,6 +49,13 @@ public class Pelicula extends ElementoDeOcio {
 
 	public void setDuracionEnMin(int duracionEnMin) {
 		this.duracionEnMin = duracionEnMin;
+	}
+
+	@Override
+	public String toString() {
+		return "CÃ³digo= " + getCodigo() + ", TÃ­tulo= " + getTitulo() + ", Director= " + director + ", GÃ©nero= " + genero
+				+ ", Fecha de estreno= " + fechaDeEstreno + ", Duracion en minutos= " + duracionEnMin + ", Likes= "
+				+ getNumeroLikes();
 	}
 
 }

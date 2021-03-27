@@ -3,7 +3,7 @@ package model;
 public class Libro extends ElementoDeOcio {
 
 	/*
-	 * Esta clase consta con la especificaci�n de lo que es el objeto Libro en el
+	 * Esta clase consta con la especificaci�n de lo que es el objeto Libro en el
 	 * sistema, este objeto hereda de ElementoDeOcio
 	 */
 
@@ -50,6 +50,13 @@ public class Libro extends ElementoDeOcio {
 
 	public void setNumeroPaginas(int numeroPaginas) {
 		this.numeroPaginas = numeroPaginas;
+	}
+
+	@Override
+	public String toString() {
+		return "Código=" + getCodigo() + ", Título= " + getTitulo() + ", Autor=" + autor + ", Género=" + genero
+				+ ", Fecha de estreno=" + fechaDeEstreno + ", Número de páginas=" + numeroPaginas + ", Likes="
+				+ getNumeroLikes();
 	}
 
 }

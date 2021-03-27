@@ -7,10 +7,10 @@ public class Videojuego extends ElementoDeOcio {
 	 * el objeto Videojuego en el programa y de lo que consta.
 	 */
 	private String consolaCompatible, fechaSalida, genero, desarrolladora;
-	private int valoracionEnEstrellas;
+	private double valoracionEnEstrellas;
 
 	public Videojuego(String titulo, int numeroLikes, int codigo, String consolaCompatible, String fechaSalida,
-			String genero, String desarrolladora, int valoracionEnEstrellas) {
+			String genero, String desarrolladora, double valoracionEnEstrellas) {
 		super(titulo, numeroLikes, codigo);
 		this.consolaCompatible = consolaCompatible;
 		this.fechaSalida = fechaSalida;
@@ -51,12 +51,19 @@ public class Videojuego extends ElementoDeOcio {
 		this.desarrolladora = desarrolladora;
 	}
 
-	public int getValoracionEnEstrellas() {
+	public double getValoracionEnEstrellas() {
 		return valoracionEnEstrellas;
 	}
 
-	public void setValoracionEnEstrellas(int valoracionEnEstrellas) {
+	public void setValoracionEnEstrellas(double valoracionEnEstrellas) {
 		this.valoracionEnEstrellas = valoracionEnEstrellas;
+	}
+
+	@Override
+	public String toString() {
+		return "Código= " + getCodigo() + ", Título=" + getTitulo() + ", Consola compatible=" + consolaCompatible
+				+ ", Fecha de salida=" + fechaSalida + ", Género=" + genero + ", Desarrolladora=" + desarrolladora
+				+ ", Valoración en estrellas=" + valoracionEnEstrellas + ", Likes=" + getNumeroLikes();
 	}
 
 }

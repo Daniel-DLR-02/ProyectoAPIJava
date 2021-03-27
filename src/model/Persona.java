@@ -5,15 +5,13 @@ import java.util.List;
 
 public class Persona {
 
-	String nombre, apellidos, id, numeroTelefono, email;
+	String id, numeroTelefono, email;
 	boolean socio;
 	List<ElementoDeOcio> carrito = new ArrayList<ElementoDeOcio>();
 
-	public Persona(String nombre, String apellidos, String id, String numeroTelefono, String email, boolean socio,
+	public Persona(String id, String numeroTelefono, String email, boolean socio,
 			List<ElementoDeOcio> carrito) {
 		super();
-		this.nombre = nombre;
-		this.apellidos = apellidos;
 		this.id = id;
 		this.numeroTelefono = numeroTelefono;
 		this.email = email;
@@ -24,25 +22,13 @@ public class Persona {
 	public List<ElementoDeOcio> getCarrito() {
 		return carrito;
 	}
+	
+	public void aniadirAlCarrito(ElementoDeOcio e1) {
+		carrito.add(e1);
+	}
 
 	public void setCarrito(List<ElementoDeOcio> carrito) {
 		this.carrito = carrito;
-	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public String getApellidos() {
-		return apellidos;
-	}
-
-	public void setApellidos(String apellidos) {
-		this.apellidos = apellidos;
 	}
 
 	public String getId() {
