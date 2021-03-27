@@ -20,5 +20,6 @@ public class ComparatorCodigos implements Comparator<ElementoDeOcio> {
 			return 0;
 	}
 
-	//Quizá otra forma de hacer esto sería con comparable,pero así podemos ver el uso de esta interfaz funcional(Comparator).
+	// Quizá otra forma de hacer esto sería con comparable,pero así podemos ver el
+	// uso de esta interfaz funcional(Comparator).
 }

@@ -27,6 +27,7 @@ public class Mensajes {
 				+ " \\||/  \\||/  \\||/  \\||/  \\||/  \\||/  \\||/  \\||/  \\||/  \\||/ \n"
 				+ "                                                            ");
 	}
+
 	public static void mostrarOpciones() {
 		System.out.println("1.-Mostrar objetos en stock ordenados por código.");
 		System.out.println("2.-Iniciar sesión.");
@@ -34,20 +35,22 @@ public class Mensajes {
 		System.out.println("4.-Mostrar el carrito.");
 		System.out.println("5.-Mostrar el precio total de todo lo del carrito.");
 	}
-	
+
 	public static void mostrarOrdenadosPorCodigo() {
 		DatosListadosElementosOcio.listaElementosDeOcio.sort(new ComparatorCodigos());
-		for(ElementoDeOcio e1: DatosListadosElementosOcio.listaElementosDeOcio) {
+		for (ElementoDeOcio e1 : DatosListadosElementosOcio.listaElementosDeOcio) {
 			System.out.println(e1);
 		}
 	}
+
 	public static void mostrarCarrito(Persona p1) {
-		for(ElementoDeOcio e1:p1.getCarrito())
+		for (ElementoDeOcio e1 : p1.getCarrito())
 			System.out.println(e1);
 	}
 
 	public static void mostrarPrecioTotalCarrito(Persona p1) {
-		
-		System.out.println("El precio total de tu carrito es de: "+AdministradorDePrecios.CalcularPrecioCarrito(p1)+" €");
+
+		System.out.println(
+				"El precio total de tu carrito es de: " + AdministradorDePrecios.CalcularPrecioCarrito(p1) + " €");
 	}
 }

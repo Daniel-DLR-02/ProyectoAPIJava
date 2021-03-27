@@ -4,7 +4,9 @@ import java.util.List;
 import datos.DatosListadosElementosOcio;
 import model.*;
 
-@FunctionalInterface
+//Aquí creo la interfaz funcional que me ayudará a calcular los precios.
+
+@FunctionalInterface //Esta notación me asegura que esta interfaz cumple con los requisitos para ser funcional.
 public interface IPrecioServicio {
 
 	public default double cobrarEnvio(Persona p1) {
@@ -20,3 +22,4 @@ public interface IPrecioServicio {
 
 	public double calcularPrecioDeServicios(List<ElementoDeOcio> ListaServicios);
 }
+

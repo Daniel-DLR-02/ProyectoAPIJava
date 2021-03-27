@@ -4,8 +4,8 @@ public class ElementoDeOcio {
 
 	/*
 	 * Creo una clase que me sirva para poder tener todos los elementos de ocio del
-	 * sistema como un mismo tipo,de este heredarán las demás
-	 * clases(Videojuego,Película,Libro)
+	 * sistema como un mismo tipo,de este heredarï¿½n las demï¿½s
+	 * clases(Videojuego,PelÃ­cula,Libro)
 	 */
 
 	private String titulo;

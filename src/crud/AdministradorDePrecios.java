@@ -8,7 +8,10 @@ import model.*;
 public class AdministradorDePrecios {
 
 	public static double CalcularPrecioCarrito(Persona p1) {
-
+		/*
+		 * Aquí me ayudo de lambda para definir calcularCarrito, que podríamos suponer,
+		 * que en otro contexto, haga falta definirla de otra manera.
+		 */
 		IPrecioServicio calcularCarrito = (List<ElementoDeOcio> le1) -> {
 			double totalCompra = 0;
 			for (ElementoDeOcio e1 : le1) {
@@ -22,6 +25,6 @@ public class AdministradorDePrecios {
 			return totalCompra;
 		};
 
-		return calcularCarrito.calcularPrecioDeServicios(p1.getCarrito())+calcularCarrito.cobrarEnvio(p1);
+		return calcularCarrito.calcularPrecioDeServicios(p1.getCarrito()) + calcularCarrito.cobrarEnvio(p1);
 	}
 }
